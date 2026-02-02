@@ -1,0 +1,197 @@
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+.Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+.Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Lscanned,
+.Pfound {
+  border: 2px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  width: 220px;
+  box-sizing: border-box;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.scanButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+
+}
+.scanButton:hover {
+  background-color: #0056b3;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row; /* side by side */
+  gap: 20px;
+  align-items: center;
+}
+/* Section wrapper */
+.section {
+  margin-top: 32px;
+}
+
+/* Grid holding Analytics, Trends, History, Map */
+.bottomGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+  gap: 20px;
+}
+
+/* Individual panel/card */
+.panel {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 16px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+/* Panel title */
+.panelTitle {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Analytics circles container */
+.analyticsCircles {
+  display: flex;
+  gap: 16px;
+}
+
+/* Individual circle */
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Chart placeholder box */
+.chartPlaceholder {
+  height: 120px;
+  border: 2px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Generic panel content (History / Map text) */
+.panelBody {
+  font-size: 14px;
+  color: #333;
+}
+/* Section wrapper */
+.section {
+  margin-top: 32px;
+}
+
+/* Grid holding Analytics, Trends, History, Map */
+.bottomGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+  gap: 20px;
+}
+
+/* Individual panel/card */
+.panel {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 16px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+/* Panel title */
+.panelTitle {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Analytics circles container */
+.analyticsCircles {
+  display: flex;
+  gap: 16px;
+}
+
+/* Individual circle */
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Chart placeholder box */
+.chartPlaceholder {
+  height: 120px;
+  border: 2px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Generic panel content (History / Map text) */
+.panelBody {
+  font-size: 14px;
+  color: #333;
+}

@@ -1,4 +1,3 @@
-import styles from './Header.module.css'
 function Header() {
     return (   <nav className={styles.navbar}>
       <h1 className={styles.logo}>

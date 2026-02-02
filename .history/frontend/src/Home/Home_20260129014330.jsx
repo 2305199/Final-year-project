@@ -21,7 +21,7 @@ function Home() {
 
 
     <div className={styles.Box}> 
-        <h2 className={styles.title2}>Recent scans</h2>
+        <h2>Recent scans</h2>
         <div className={styles.recentScans}>
             <div className={styles.topRow}>
             <div className={styles.Lscanned}><p>Scan 1 details</p></div>
@@ -36,7 +36,6 @@ function Home() {
           {/* Lower dashboard blocks */}
       <section className={styles.section}>
         <div className={styles.bottomGrid}>
-
           {/* Analytics numbers */}
           <div className={styles.panel}>
             <h3 className={styles.panelTitle}>Analytics</h3>

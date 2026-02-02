@@ -1,0 +1,123 @@
+.page {
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.topSection {
+  margin-bottom: 24px;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.summaryCard {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.cardLabel {
+  margin: 0;
+  font-size: 14px;
+}
+
+.cardValue {
+  margin: 8px 0 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.scanButton {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.sectionTitle {
+  margin-bottom: 12px;
+}
+
+.recentScansGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.scanCard {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.scanTitle {
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.scanDetails {
+  margin: 0;
+  font-size: 14px;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.panel {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 160px;
+}
+
+.panelTitle {
+  margin: 0 0 12px;
+}
+
+.analyticsCircles {
+  display: flex;
+  gap: 12px;
+}
+
+.circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.chartPlaceholder {
+  height: 110px;
+  border: 1px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panelBody {
+  font-size: 14px;
+}

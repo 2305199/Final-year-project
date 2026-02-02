@@ -1,42 +1,43 @@
 import styles from './Home.module.css'
 function Home() {
-    return ( <div>
-        <div className={styles.title}> <h1>Welcome to the Home Page</h1></div>
-   
-   
-<div className={styles.Box}>
-  <div className={styles.topRow}>
-    <div className={styles.Lscanned}>
-      <p>Last Scanned:</p>
-    </div>
+    return (     <div className={styles.page}>
+      <header className={styles.header}>
+        <h1 className={styles.title}>PHISHING WEBSITE</h1>
+      </header>
 
-    <div className={styles.Pfound}>
-      <p>Phishing URLs found:</p>
-    </div>
-  </div>
+      {/* Top summary section */}
+      <section className={styles.topSection}>
+        <div className={styles.summaryGrid}>
+          <div className={styles.summaryCard}>
+            <p className={styles.cardLabel}>Phishing URLs detected</p>
+            <p className={styles.cardValue}>{phishingCount}</p>
+          </div>
 
-  <button className={styles.scanButton}>Scan now</button>
-</div>
+          <div className={styles.summaryCard}>
+            <p className={styles.cardLabel}>Last scanned</p>
+            <p className={styles.cardValue}>{lastScanned}</p>
+          </div>
 
-
-
-    <div className={styles.Box}> 
-        <h2 className={styles.title2}>Recent scans</h2>
-        <div className={styles.recentScans}>
-            <div className={styles.topRow}>
-            <div className={styles.Lscanned}><p>Scan 1 details</p></div>
-            <div className={styles.Lscanned}><p>Scan 2 details</p></div>
-            </div>
-            <div className={styles.topRow}>
-            <div className={styles.Lscanned}><p>Scan 3 details</p></div>
-             <div className={styles.Lscanned}><p>Scan 3 details</p></div>
-             </div>
+          <button className={styles.scanButton}>SCAN NOW</button>
         </div>
-    </div>
-          {/* Lower dashboard blocks */}
+      </section>
+
+      {/* Recent scans */}
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Most recent scans</h2>
+        <div className={styles.recentScansGrid}>
+          {recentScans.map((scan) => (
+            <div key={scan.id} className={styles.scanCard}>
+              <p className={styles.scanTitle}>{scan.title}</p>
+              <p className={styles.scanDetails}>{scan.details}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Lower dashboard blocks */}
       <section className={styles.section}>
         <div className={styles.bottomGrid}>
-
           {/* Analytics numbers */}
           <div className={styles.panel}>
             <h3 className={styles.panelTitle}>Analytics</h3>
@@ -66,7 +67,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-    </div>)
+      </div>)
 }
 export default Home
