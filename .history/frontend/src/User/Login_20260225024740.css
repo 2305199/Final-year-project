@@ -1,0 +1,120 @@
+/* Login page wrapper */
+.login-page {
+  min-height: calc(100vh - 80px);
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card container */
+.login-card {
+  width: min(480px, 96%);
+  background: #d9d9d9;
+  border: 1px solid #c7c7c7;
+  border-radius: 16px;
+  padding: 28px 22px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Header section */
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1f1f1f;
+}
+
+.login-subtitle {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Form layout */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input field wrapper */
+.login-field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.login-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 8px;
+}
+
+/* Input styling */
+.login-input {
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #cfcfcf;
+  background: #f9f9f9;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #111;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-input::placeholder {
+  color: #666;
+}
+
+.login-input:focus {
+  border-color: #9a9a9a;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Login button */
+.login-btn {
+  margin-top: 8px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid #bdbdbd;
+  background: #efefef;
+  color: #111;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.08s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.login-btn:hover {
+  background: #e6e6e6;
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer text */
+.login-footer {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
+
+.login-link {
+  color: #111;
+  font-weight: 700;
+  text-decoration: underline;
+}
