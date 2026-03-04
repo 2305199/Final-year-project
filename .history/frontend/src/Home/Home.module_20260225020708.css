@@ -1,0 +1,293 @@
+/* Page wrapper */
+.page {
+   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 30px;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 24px 0 10px;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+/* Subtitle under title */
+.subtitle {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+/* Main card/box wrapper */
+.Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #000;
+  padding: 22px;
+  margin: 18px auto;
+  width: min(1000px, 92%);
+
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  gap: 18px;
+}
+
+/* Row used for the two top stats */
+.topRow {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Stat cards (top summary) */
+.statCard {
+  border: 2px solid #d3d3d3;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+  line-height: 1.4;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.statValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Scan button */
+.scanButton {
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #007bff;
+  color: #fff;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.08s ease;
+}
+
+.scanButton:hover {
+  background-color: #0056b3;
+}
+
+.scanButton:active {
+  transform: scale(0.98);
+}
+
+.scanButton:disabled {
+  background-color: #9bbff2;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Recent scans header text */
+.sectionHeader {
+  text-align: center;
+}
+
+.helperText {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 6px;
+}
+
+.emptyText {
+  color: #666;
+  font-family: Arial, sans-serif;
+}
+
+/* Recent scans grid (each scan is its own box) */
+.recentGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .recentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual scan card */
+.scanMiniCard {
+  border: 2px solid #d3d3d3;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.scanMiniCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+.scanMiniTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.scanMiniTitle {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.scanMiniDate {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Stats inside card */
+.scanMiniStats {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Keep your colour scheme */
+.badPhish {
+  color: #b00020;
+  font-weight: 600;
+}
+
+.badSafe {
+  color: #0b6b2b;
+  font-weight: 600;
+}
+
+/* Lower dashboard section */
+.section {
+  margin-top: 32px;
+  width: min(1000px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2x2 responsive grid */
+.bottomGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Panels */
+.panel {
+  border: 2px solid #d3d3d3;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  padding: 18px;
+  min-height: 190px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.panelTitle {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+/* Analytics circles + labels */
+.analyticsCircles {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.metricLabel {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Analytics circle */
+.circle {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  background: #fff;
+}
+
+/* Placeholder graph box */
+.chartPlaceholder {
+  height: 130px;
+  border: 2px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+.panelBody {
+  font-size: 14px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title2 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0 0 6px;
+  color: #444;
+  font-family: Arial, sans-serif;
+}

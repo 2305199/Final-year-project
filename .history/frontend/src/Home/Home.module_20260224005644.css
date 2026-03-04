@@ -1,0 +1,121 @@
+.page {
+  padding-bottom: 40px;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #555;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.sectionHeader {
+  width: 100%;
+  text-align: center;
+}
+
+.helperText {
+  margin: 6px 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.emptyText {
+  margin: 10px 0 0;
+  color: #666;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Better stat style */
+.statCard {
+  border: 2px solid #ccc;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.statValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  font-family: Arial, sans-serif;
+  line-height: 1.3;
+}
+
+/* Recent scans grid instead of 2 hard rows */
+.recentGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 700px) {
+  .recentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.scanMiniCard {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  padding: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.scanMiniTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.scanMiniTitle {
+  font-weight: 700;
+  color: #222;
+}
+
+.scanMiniDate {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.scanMiniStats {
+  display: grid;
+  gap: 6px;
+  color: #333;
+}
+
+.badPhish {
+  color: #b00020;
+}
+
+.badSafe {
+  color: #0b6b2b;
+}
+
+/* Analytics labels under circles */
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.metricLabel {
+  font-size: 0.85rem;
+  color: #666;
+  font-family: Arial, sans-serif;
+}
