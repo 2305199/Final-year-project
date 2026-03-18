@@ -1,0 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home/Home.jsx'
+import Location from './Location/Location.jsx'
+import History from './History/History.jsx'
+import Header from './components/Header.jsx'
+
+function App() {
+
+  return (
+    <Router>
+    <Header />
+   <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/location" element={<Location />} />
+      <Route path="/history" element={<History />} />
+  
+   </Routes>
+    </Router>
+  )
+}
+
+export default App
